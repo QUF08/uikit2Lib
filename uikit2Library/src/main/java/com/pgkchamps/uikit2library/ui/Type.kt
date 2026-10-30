@@ -42,5 +42,27 @@ val Typography = Typography(
         fontSize = 12.sp,
         lineHeight = 1.em,
         letterSpacing =  (-0.3).sp
+    ),
+    headlineMedium = TextStyle(
+        fontFamily = PoppinsFontFamily,
+        fontWeight = FontWeight.W400,
+        fontSize = 16.sp,
+        lineHeight = 1.em,
+        letterSpacing = (-0.3).sp
+),
+    titleSmall = TextStyle(
+        fontFamily = PoppinsFontFamily,
+        fontWeight = FontWeight.W400,
+        fontSize = 8.sp,
+        lineHeight = 1.em,
+        letterSpacing = 0.sp
+),
+    titleLarge = TextStyle(
+        fontFamily =  PoppinsFontFamily,
+        fontWeight = FontWeight.W400,
+        fontSize = 12.sp,
+        lineHeight = 1.em,
+        letterSpacing = 0.sp
+
     )
 )
