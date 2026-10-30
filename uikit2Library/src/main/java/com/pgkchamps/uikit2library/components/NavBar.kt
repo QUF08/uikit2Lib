@@ -1,21 +1,17 @@
 package com.pgkchamps.uikit2library.components
 
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
-import androidx.compose.material3.NavigationBarDefaults
 import androidx.compose.material3.NavigationBarItem
-import androidx.compose.material3.NavigationBarItemColors
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -64,8 +60,6 @@ fun Nav(
             modifier = Modifier.padding(top = 28.dp),
 
         ) {
-
-
             NavItems.entries.forEach { navItem ->
 
                 NavigationBarItem(
@@ -77,12 +71,9 @@ fun Nav(
                         if (navItem == NavItems.Schedule)
                         {
                             Box(
-
                                 Modifier.size(58.dp).clip(CircleShape).border(5.dp, Color.White,CircleShape),
-
                                 contentAlignment = Alignment.Center
                             ) {
-
                                 Icon(
                                     painterResource(navItem.icon),
                                     contentDescription = null,
@@ -94,8 +85,6 @@ fun Nav(
                                 contentDescription = null,
                             )
                         }
-
-
                     },
                     label = if (navItem == NavItems.Schedule) null else {
                         {
@@ -119,11 +108,8 @@ fun Nav(
                     )
                 )
             }
-
         }
     }
-
-
 }
 
 @Preview
@@ -137,7 +123,6 @@ private fun NavPrev() {
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
-
             var nowNav by remember { mutableStateOf(NavItems.Schedule) }
 
             Nav(
@@ -147,8 +132,5 @@ private fun NavPrev() {
                 }
             )
         }
-
     }
-
-
 }

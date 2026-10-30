@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -23,49 +22,46 @@ import com.pgkchamps.uikit2library.ui.UikitTheme
 import com.pgkchamps.uikitlib.R
 
 @Composable
-fun Select (
+fun Select(
     onClick: () -> Unit,
-    textFirst: String,
-    textSecond: String,
-    modifier: Modifier = Modifier
+    textOne: String,
+    textTwo: String,
+    modifier: Modifier
 ) {
     Column(modifier = modifier) {
-        // 1. Верхний лейбл "FROM"
+        // Текст сверху
         Text(
-            text = textFirst,
+            text = textOne,
             color = Color(0xFFFA5075),
             style = MaterialTheme.typography.titleSmall
         )
 
-        // Отступ между "FROM" и датой
         Spacer(modifier = Modifier.height(10.dp))
-
-        // 2. Строка с датой и стрелочкой
+        // Отступ по высоте
         Row(
+            // Расположение элементов в строку
             verticalAlignment = Alignment.CenterVertically
-        ) {
+        )   {
             Text(
-                text = textSecond,
+                text = textTwo,
                 style = MaterialTheme.typography.titleLarge
             )
 
-            // Отступ между датой и стрелочкой
             Spacer(modifier = Modifier.width(16.dp))
 
-            // 3. Стрелочка с кликом "без действия"
             Icon(
                 painter = painterResource(id = R.drawable.dropdown),
                 contentDescription = "",
                 tint = Color.Unspecified,
                 modifier = Modifier.clickable {
-                    onClick ()
+                    onClick()
                 }
             )
         }
     }
 }
 
-@Preview (showBackground = true)
+@Preview
 @Composable
 private fun SelectPrev() {
     UikitTheme {
@@ -78,7 +74,8 @@ private fun SelectPrev() {
             Select(
                 onClick = {},
                 "FROM",
-                "MON, NOV 4,2019"
+                "MON, NOV 4,2019",
+                modifier = Modifier
             )
         }
     }
