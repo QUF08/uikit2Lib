@@ -27,6 +27,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.pgkchamps.uikit2library.ui.UikitTheme
+import com.pgkchamps.uikit2library.ui.gradientPrimary
 
 
 @Composable
@@ -46,7 +47,7 @@ fun OurInput(
         Spacer(Modifier.height(8.dp))
         Box(
             Modifier.fillMaxWidth().background(
-                Color.Red
+                brush = gradientPrimary,
             ).height(1.dp)
         )
     }

@@ -63,6 +63,12 @@ val Typography = Typography(
         fontSize = 12.sp,
         lineHeight = 1.em,
         letterSpacing = 0.sp
-
+    ),
+    bodyMedium = TextStyle(
+        fontFamily =  PoppinsFontFamily,
+        fontWeight = FontWeight.W700,
+        fontSize = 12.sp,
+        lineHeight = 1.em,
+        letterSpacing = (-0.3).sp
     )
 )
