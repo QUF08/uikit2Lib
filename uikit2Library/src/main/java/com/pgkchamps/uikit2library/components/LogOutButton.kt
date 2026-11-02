@@ -30,7 +30,7 @@ import com.pgkchamps.uikitlib.R
 fun LogOutButton (
     onClick: () -> Unit,
     text: String,
-    modifier: Modifier = Modifier.height(24.dp)
+    modifier: Modifier = Modifier
 ) {
 
 

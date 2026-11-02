@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -55,7 +56,7 @@ fun Cart(
             Column(
                 Modifier
                     .padding(top = 30.dp, start = 24.dp, bottom = 22.dp)
-                    .fillMaxSize(0.55f)
+                    .fillMaxWidth(0.55f)
             ) {
                 Text(
                     name,

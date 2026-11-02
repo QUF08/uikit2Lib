@@ -26,49 +26,42 @@ val Typography = Typography(
         fontFamily = PoppinsFontFamily,
         fontWeight = FontWeight.W400,
         fontSize = 10.sp,
-        lineHeight = 1.em,
         letterSpacing = (-0.3).sp
     ),
     labelSmall = TextStyle(
         fontFamily = PoppinsFontFamily,
         fontWeight = FontWeight.W700,
         fontSize = 14.sp,
-        lineHeight = 1.em,
         letterSpacing = 0.sp
     ),
     headlineLarge = TextStyle(
         fontFamily = PoppinsFontFamily,
         fontWeight = FontWeight.W700,
         fontSize = 12.sp,
-        lineHeight = 1.em,
         letterSpacing =  (-0.3).sp
     ),
     headlineMedium = TextStyle(
         fontFamily = PoppinsFontFamily,
         fontWeight = FontWeight.W400,
         fontSize = 16.sp,
-        lineHeight = 1.em,
         letterSpacing = (-0.3).sp
 ),
     titleSmall = TextStyle(
         fontFamily = PoppinsFontFamily,
         fontWeight = FontWeight.W400,
         fontSize = 8.sp,
-        lineHeight = 1.em,
         letterSpacing = 0.sp
 ),
     titleLarge = TextStyle(
         fontFamily =  PoppinsFontFamily,
         fontWeight = FontWeight.W400,
         fontSize = 12.sp,
-        lineHeight = 1.em,
         letterSpacing = 0.sp
     ),
     bodyMedium = TextStyle(
         fontFamily =  PoppinsFontFamily,
         fontWeight = FontWeight.W700,
         fontSize = 12.sp,
-        lineHeight = 1.em,
         letterSpacing = (-0.3).sp
     )
 )
